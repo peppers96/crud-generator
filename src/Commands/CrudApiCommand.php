@@ -1,6 +1,6 @@
 <?php
 
-namespace Appzcoder\CrudGenerator\Commands;
+namespace DioCreation\CrudGenerator\Commands;
 
 use File;
 use Illuminate\Console\Command;
