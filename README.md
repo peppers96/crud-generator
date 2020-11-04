@@ -6,7 +6,7 @@ This Generator package provides various generators like CRUD, API, Controller, M
     Laravel >= 5.3
     PHP >= 5.6.4
 
-##TODO
+## TODO
 
 - [ ] Replace Stub template Create
 - [ ] Replace Stub template Edit
