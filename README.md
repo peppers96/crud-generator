@@ -8,18 +8,18 @@ This Generator package provides various generators like CRUD, API, Controller, M
 
 ##TODO
 
--[ ] Replace Stub template Create
--[ ] Replace Stub template Edit
--[ ] Replace Stub template Form
--[x] Replace Stub template Index
--[ ] Replace Stub template Show
--[x] Replace Layout template 
--[x] Replace Dashboard template 
--[x] Replace Sidebar template 
--[ ] Add Option Laravel Datatable Support 
--[ ] Add Option LiveWire Support 
--[ ] Add Option Laravel Permission Support 
--[ ] Add Option Laravel Socialite Support 
+- [ ] Replace Stub template Create
+- [ ] Replace Stub template Edit
+- [ ] Replace Stub template Form
+- [x] Replace Stub template Index
+- [ ] Replace Stub template Show
+- [x] Replace Layout template 
+- [x] Replace Dashboard template 
+- [x] Replace Sidebar template 
+- [ ] Add Option Laravel Datatable Support 
+- [ ] Add Option LiveWire Support 
+- [ ] Add Option Laravel Permission Support 
+- [ ] Add Option Laravel Socialite Support 
 
 ## Documentation
 Go through to the [detailed documentation](doc#readme)
