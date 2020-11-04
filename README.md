@@ -24,8 +24,9 @@ This Generator package provides various generators like CRUD, API, Controller, M
 ## Documentation
 Go through to the [detailed documentation](doc#readme)
 
-## Author
+## Authors
 [Danar Widi](https://diocreation.com) :email: [Email Me](mailto:widiu7omo@gmail.com)
+## Source Author
 [Sohel Amin](http://sohelamin.com) :email: [Email Me](mailto:sohelamincse@gmail.com)
 
 ## License
