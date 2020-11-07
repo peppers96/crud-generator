@@ -12,6 +12,7 @@ require('@tailwindcss/ui');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.js('resources/js/app.js', 'public/js').sourceMaps()
+    .extract(['jquery','lodash','@popperjs/core','@tailwindcss/ui'])
     .less('resources/less/app.less', 'public/css')
-    .tailwind();
+    .tailwind().version();

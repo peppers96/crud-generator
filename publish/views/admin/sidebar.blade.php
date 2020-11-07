@@ -34,7 +34,7 @@
     <ul class="md:flex-col md:min-w-full flex flex-col list-none">
         <li class="items-center">
             <a class="text-white hover:shadow-sm rounded-lg my-1 px-4 bg-gray-800 text-xs uppercase py-3 font-bold block"
-               href="{{route('/')}}"><i class="fas fa-tv mr-2 text-sm tracking-wider"></i>
+               href="{{url('/')}}"><i class="fas fa-tv mr-2 text-sm tracking-wider"></i>
                 Dashboard</a>
         </li>
         <li class="items-center">
