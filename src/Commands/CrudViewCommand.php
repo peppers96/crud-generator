@@ -348,7 +348,7 @@ class CrudViewCommand extends Command
             }
             $this->formHeadingHtml .= '<th class="px-4 py-2 w-10/12 text-gray-500 text-left tracking-wider font-light uppercase text-sm">' . $label . '</th>';
             $this->formBodyHtml .= '<td class="px-4 py-4">{{ $item->' . $field . ' }}</td>';
-            $this->formBodyHtmlForShowView .= '<tr><th> ' . $label . ' </th><td> {{ $%%crudNameSingular%%->' . $field . ' }} </td></tr>';
+            $this->formBodyHtmlForShowView .= '<tr><th class="w-3/12 border-r-2 font-bold tracking-wider uppercase"> ' . $label . ' </th><td class="px-4 py-2 leading-snug"> {{ $%%crudNameSingular%%->' . $field . ' }} </td></tr>';
 
             $i++;
         }
