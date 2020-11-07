@@ -20,7 +20,7 @@
                                     <i class="fas fa-search text-gray-600"></i>
                                 </span>
                                 <form method="GET" action="{{ url('/%%routeGroup%%%%viewName%%') }}" accept-charset="UTF-8" class="m-0 p-0 w-full">
-                                    <input class="px-3 py-3 placeholder-gray-600 text-gray-700 relative focus:bg-gray-100 bg-gray-300 rounded-lg text-sm outline-none focus:outline-none focus:shadow-outline w-full pl-10"
+                                    <input name="search" class="px-3 py-3 placeholder-gray-600 text-gray-700 relative focus:bg-gray-100 bg-gray-300 rounded-lg text-sm outline-none focus:outline-none focus:shadow-outline w-full pl-10"
                                        placeholder="Search data %%modelName%%"
                                        type="text" value="{{ request('search') }}"/>
                                 </form>
