@@ -1,6 +1,6 @@
 <?php
 
-namespace Appzcoder\CrudGenerator\Commands;
+namespace DioCreation\CrudGenerator\Commands;
 
 use File;
 use Illuminate\Console\Command;
@@ -267,7 +267,7 @@ class CrudViewCommand extends Command
         $formHelper = $this->option('form-helper');
         $this->viewDirectoryPath = config('crudgenerator.custom_template')
             ? config('crudgenerator.path') . 'views/' . $formHelper . '/'
-            : __DIR__ . '/../stubs/views/' . $formHelper . '/';
+            : __DIR__ . '/../stubs/views/';
 
 
         $this->crudName = strtolower($this->argument('name'));
@@ -346,9 +346,9 @@ class CrudViewCommand extends Command
             if ($this->option('localize') == 'yes') {
                 $label = '{{ trans(\'' . $this->crudName . '.' . $field . '\') }}';
             }
-            $this->formHeadingHtml .= '<th>' . $label . '</th>';
-            $this->formBodyHtml .= '<td>{{ $item->' . $field . ' }}</td>';
-            $this->formBodyHtmlForShowView .= '<tr><th> ' . $label . ' </th><td> {{ $%%crudNameSingular%%->' . $field . ' }} </td></tr>';
+            $this->formHeadingHtml .= '<th class="px-4 py-2 w-10/12 text-gray-500 text-left tracking-wider font-light uppercase text-sm">' . $label . '</th>';
+            $this->formBodyHtml .= '<td class="px-4 py-4">{{ $item->' . $field . ' }}</td>';
+            $this->formBodyHtmlForShowView .= '<tr><th class="w-3/12 border-r-2 font-bold tracking-wider uppercase"> ' . $label . ' </th><td class="px-4 py-2 leading-snug"> {{ $%%crudNameSingular%%->' . $field . ' }} </td></tr>';
 
             $i++;
         }

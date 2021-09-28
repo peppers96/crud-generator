@@ -1,6 +1,6 @@
 <?php
 
-namespace Appzcoder\CrudGenerator;
+namespace DioCreation\CrudGenerator;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -23,9 +23,20 @@ class CrudGeneratorServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/crudgenerator.php' => config_path('crudgenerator.php'),
         ]);
+        $this->publishes([
+            __DIR__ . '/../publish/webpack.mix.js' => base_path('webpack.mix.js'),
+        ]);
 
         $this->publishes([
             __DIR__ . '/../publish/views/' => base_path('resources/views/'),
+        ]);
+
+        $this->publishes([
+            __DIR__ . '/../publish/js/' => base_path('resources/js/'),
+        ]);
+
+        $this->publishes([
+            __DIR__ . '/../publish/less/' => base_path('resources/less/'),
         ]);
 
         $this->publishes([
@@ -41,14 +52,14 @@ class CrudGeneratorServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands(
-            'Appzcoder\CrudGenerator\Commands\CrudCommand',
-            'Appzcoder\CrudGenerator\Commands\CrudControllerCommand',
-            'Appzcoder\CrudGenerator\Commands\CrudModelCommand',
-            'Appzcoder\CrudGenerator\Commands\CrudMigrationCommand',
-            'Appzcoder\CrudGenerator\Commands\CrudViewCommand',
-            'Appzcoder\CrudGenerator\Commands\CrudLangCommand',
-            'Appzcoder\CrudGenerator\Commands\CrudApiCommand',
-            'Appzcoder\CrudGenerator\Commands\CrudApiControllerCommand'
+            'DioCreation\CrudGenerator\Commands\CrudCommand',
+            'DioCreation\CrudGenerator\Commands\CrudControllerCommand',
+            'DioCreation\CrudGenerator\Commands\CrudModelCommand',
+            'DioCreation\CrudGenerator\Commands\CrudMigrationCommand',
+            'DioCreation\CrudGenerator\Commands\CrudViewCommand',
+            'DioCreation\CrudGenerator\Commands\CrudLangCommand',
+            'DioCreation\CrudGenerator\Commands\CrudApiCommand',
+            'DioCreation\CrudGenerator\Commands\CrudApiControllerCommand'
         );
     }
 }

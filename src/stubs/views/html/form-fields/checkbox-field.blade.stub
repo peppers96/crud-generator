@@ -1,6 +1,20 @@
-<div class="checkbox">
-    <label><input name="{{ %1$s }}" type="checkbox" value="1" {{ (isset($%%crudNameSingular%%) && 1 == $%%crudNameSingular%%->%1$s) ? 'checked' : '' }}> Yes</label>
-</div>
-<div class="checkbox">
-    <label><input name="{{ %1$s }}" type="checkbox" value="0" {{ (isset($%%crudNameSingular%%) && 0 == $%%crudNameSingular%%->%1$s) ? 'checked' : '' }}> No</label>
-</div>
+<fieldset class="p-2 pt-0 w-full md:w-6/12">
+    <legend class="text-base leading-6 font-medium text-white">%%itemName%%</legend>
+    <p class="text-sm leading-5 text-gray-200"></p>
+    <div class="mt-4">
+        <div class="flex items-center">
+            <input id="%%itemName%%_1" name="%%itemName%%" type="checkbox" value="1" {{ (isset($%%crudNameSingular%%) && 1 == $%%crudNameSingular%%->%%itemName%%) ? 'checked' : '' }}
+                   class="form-checkbox h-4 w-4 text-blue-500 transition duration-200 ease-in-out">
+            <label for="%%itemName%%_1" class="ml-3">
+                <span class="block text-sm leading-5 font-medium text-white">Yes</span>
+            </label>
+        </div>
+        <div class="flex items-center">
+            <input id="%%itemName%%_0" name="%%itemName%%" type="checkbox" value="0" @if (isset($%%crudNameSingular%%)) {{ (0 == $%%crudNameSingular%%->%%itemName%%) ? 'checked' : '' }} @else {{ 'checked' }} @endif
+                   class="form-checkbox h-4 w-4 text-blue-500 transition duration-200 ease-in-out">
+            <label for="%%itemName%%_0" class="ml-3">
+                <span class="block text-sm leading-5 font-medium text-white">No</span>
+            </label>
+        </div>
+    </div>
+</fieldset>
